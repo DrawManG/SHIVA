@@ -1,0 +1,44 @@
+﻿<Window x:Class="FileEncryptor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Шифра" Height="358" Width="662" BorderThickness="0" ResizeMode="NoResize">
+    <Grid>
+        <Grid x:Name="grid_encrypt" Margin="10,27,10,10" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="54*"/>
+                <ColumnDefinition Width="22*"/>
+                <ColumnDefinition Width="551*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tb_plainFilePath" HorizontalAlignment="Left" Height="28" Margin="0,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="444" Grid.Column="1" Grid.ColumnSpan="3"/>
+            <Button x:Name="bt_selPlain" Content="Выбрать"  Click="Bt_selPlain_Click" HorizontalAlignment="Left" Margin="373,40,0,0" VerticalAlignment="Top" Width="152" Height="28" Grid.Column="3"/>
+            <Label Content="Выберите файл для шифрования:" HorizontalAlignment="Left" Height="27" Margin="0,8,0,0" VerticalAlignment="Top" Width="226" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3"/>
+            <Button x:Name="bt_setting" Content="Настройка ключа" Click="Bt_setting_Click" HorizontalAlignment="Left" Height="29" Margin="404,247,0,0" VerticalAlignment="Top" Width="121"  Grid.Column="3"/>
+            <Button Content="Шифровать"  Click="Bt_encrypt_Click" HorizontalAlignment="Left" Height="29" Margin="2,247,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="1.932,0.69" Grid.Column="1" Grid.ColumnSpan="3"/>
+            <TextBox x:Name="tb_output" HorizontalAlignment="Left" Height="145" Margin="0,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" ScrollViewer.VerticalScrollBarVisibility="Auto" TextChanged="Tb_output_TextChanged" Text=" " Grid.Column="1" Grid.ColumnSpan="3" />
+            <Label Content="Консольные данные:" HorizontalAlignment="Left" Height="34" Margin="0,68,0,0" VerticalAlignment="Top" Width="168" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3"/>
+        </Grid>
+
+        <Grid x:Name="grid_decrypt" Margin="10,27,10,10" Visibility="Collapsed" >
+            <TextBox x:Name="tb_encryptedFilePath" HorizontalAlignment="Left" Height="28" Margin="10,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="434"/>
+            <Button x:Name="bt_selEncrypted" Content="Выбрать"  Click="Bt_selEncrypted_Click" HorizontalAlignment="Left" Margin="458,40,0,0" VerticalAlignment="Top" Width="152" Height="28"/>
+            <Label Content="Выберите файл для расшифрования:" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Width="239" FontWeight="Bold"/>
+            <Button x:Name="bt_settingDecrypt" Content="Настройки ключа" Click="Bt_settingDecrypt_Click" HorizontalAlignment="Left" Height="35" Margin="486,247,0,0" VerticalAlignment="Top" Width="124" />
+            <Button x:Name="bt_decrypt" Content="Дешифровать" Click="Bt_decrypt_Click" HorizontalAlignment="Left" Height="35" Margin="10,247,0,0" VerticalAlignment="Top" Width="138" RenderTransformOrigin="1.932,0.69" />
+            <TextBox x:Name="tb_outputDecrypt" HorizontalAlignment="Left" Height="145" Margin="10,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="600" ScrollViewer.VerticalScrollBarVisibility="Auto" Text=" " TextChanged="Tb_outputDecrypt_TextChanged" />
+            <Label Content="Консольные данные:" HorizontalAlignment="Left" Height="34" Margin="10,68,0,0" VerticalAlignment="Top" Width="202" FontWeight="Bold"/>
+
+
+
+        </Grid>
+        <Menu HorizontalAlignment="Left" VerticalAlignment="Top" Width="656" BorderBrush="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
+            <MenuItem Header="Выбор">
+                <MenuItem x:Name="mi_switch" Header="Поменять Шифрование на дешифрование" Click="Mi_switch_Click"/>
+            </MenuItem>
+            <MenuItem Header="Настройки">
+                <MenuItem x:Name="mi_genKeyPair" Header="Генерация ключей" Click="Mi_genKeyPair_Click"/>
+                <MenuItem x:Name="mi_convertKey" Header="Генерация ключей в xml (не работает)" Click="Mi_convertKey_Click"/>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+C:\Users\Пользователь\Downloads\1\FileEncryptor\bin\Debug\SHIFA.exe.config
+C:\Users\Пользователь\Downloads\1\FileEncryptor\bin\Debug\SHIFA.exe
+C:\Users\Пользователь\Downloads\1\FileEncryptor\bin\Debug\SHIFA.pdb
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\DecryptionSettingWindow.baml
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\MainWindow.baml
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SettingWindow.baml
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\DecryptionSettingWindow.g.cs
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\MainWindow.g.cs
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SettingWindow.g.cs
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\App.g.cs
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA_MarkupCompile.cache
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA.g.resources
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA.Properties.Resources.resources
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\Шива.csproj.GenerateResource.cache
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA.exe
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA.pdb
