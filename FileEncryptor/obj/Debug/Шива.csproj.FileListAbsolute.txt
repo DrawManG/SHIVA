@@ -14,3 +14,4 @@ C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA.Prop
 C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\Шива.csproj.GenerateResource.cache
 C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA.exe
 C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\SHIFA.pdb
+C:\Users\Пользователь\Downloads\1\FileEncryptor\obj\Debug\Шива.csprojAssemblyReference.cache

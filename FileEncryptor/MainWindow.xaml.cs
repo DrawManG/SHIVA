@@ -229,8 +229,10 @@ namespace FileEncryptor
 
         private void Mi_convertKey_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("не работает!");
             OpenFileDialog ofd = new OpenFileDialog
             {
+                
                 DefaultExt = ".pem",
                 Filter = SHIFA.Properties.Resources.PEM_File_Type,
                 Title = SHIFA.Properties.Resources.DialogTitle_SelectPem
